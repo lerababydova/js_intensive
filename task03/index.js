@@ -9,12 +9,3 @@ const makeObjectDeepCopy = (object) => {
     return object;
   }
 };
-
-const a = {
-  x: {
-    y: 1,
-  },
-};
-const clonedA = makeObjectDeepCopy(a);
-clonedA.x.y = 10;
-console.log(a.x.y, clonedA.x.y);
