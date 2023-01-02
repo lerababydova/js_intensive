@@ -1,0 +1,7 @@
+const createDebounceFunction = function (callback, delay) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(callback, delay);
+  };
+};
